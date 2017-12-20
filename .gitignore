@@ -12,3 +12,5 @@ yarn-error.log
 .env
 /config/database.php
 /public/connection.php
+/fundraising/config/database.php
+/fundraising/public/connection.php
