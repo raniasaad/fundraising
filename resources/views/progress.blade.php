@@ -49,7 +49,7 @@ function updateChart() {
 //	setInterval(function() {
 	$.ajax({    //create an ajax request to display.php
       //  type: "GET",
-        url: "public/display.php",  
+        url: "display.php",  
 		cache: false,
         //   dataType: 'json',
             complete: function(data) {
