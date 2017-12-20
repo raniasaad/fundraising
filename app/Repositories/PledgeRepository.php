@@ -14,14 +14,7 @@ class PledgeRepository extends ResourceRepository
 		//$this->pledge = $pledge;
 		$this->model = $pledge;
 	}
-	protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name_d' => 'required|string|max:255|unique:pledges',
-            'email_d' => 'required|string|email|max:255|unique:pledges'
-           
-        ]);
-    }
+	
 	
 
 	/*private function save(Pledge $pledge, Array $inputs)

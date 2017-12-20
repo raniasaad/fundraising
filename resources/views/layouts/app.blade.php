@@ -13,7 +13,7 @@
 		{!! Html::style('https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css') !!}
 		
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
 </head>
 <style>
 .container a{
@@ -21,6 +21,7 @@
 	font-weight:bold;}
 	.form-horizontal .control-label {
     text-align: left;}
+	body{font-family: sans-serif;}
 </style>
 <body>
     <div id="app">
@@ -87,6 +88,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('public/js/app.js') }}"></script>
 </body>
 </html>

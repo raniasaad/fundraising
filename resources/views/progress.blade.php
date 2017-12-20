@@ -23,7 +23,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		tickLength: 0,
 		gridDashType: "solid",
 		stripLines: [{
-			value: 1100,
+			value: 4500,
 			label: "Target",
 			labelFontColor: "#FF0800",
 			showOnTop: true,
@@ -37,8 +37,8 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		yValueFormatString: "#,### $",
 		indexLabel: "{y}",
 		dataPoints: [
-			{ label: "One time", y: 206 },
-			{ label: "Monthly", y: 163 }
+			{ label: "One time", y: 1500 },
+			{ label: "Monthly", y: 1500 }
 		]
 	}]
 });
@@ -49,7 +49,7 @@ function updateChart() {
 //	setInterval(function() {
 	$.ajax({    //create an ajax request to display.php
       //  type: "GET",
-        url: "display.php",  
+        url: "public/display.php",  
 		cache: false,
         //   dataType: 'json',
             complete: function(data) {

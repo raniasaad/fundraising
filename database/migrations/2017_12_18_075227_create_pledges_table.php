@@ -20,7 +20,7 @@ class CreatePledgesTable extends Migration
 			$table->integer('duration')->unsigned();
             $table->string('start_date');
             $table->string('name_d');
-            $table->string('email_d')->unique();
+            $table->string('email_d');
 			$table->string('phone_d');
 			$table->integer('direction1')->unsigned();
 			$table->integer('direction2')->unsigned();

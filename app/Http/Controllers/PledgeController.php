@@ -66,7 +66,7 @@ $links = $pledges->setPath('')->render();
     {
         $pledge = $this->pledgeRepository->store($request->all());
 
-		return redirect('pledge')->withOk("Pledge from" . $pledge->name_d . " added.");
+		return redirect('pledge')->withOk("Pledge from " . $pledge->name_d . " added.");
     }
 
     /**
@@ -106,7 +106,7 @@ $links = $pledges->setPath('')->render();
     {
         $this->pledgeRepository->update($id, $request->all());
 		
-		return redirect('pledge')->withOk("Pledge from" . $request->input('name_d') . " was modified.");
+		return redirect('pledge')->withOk("Pledge from " . $request->input('name_d') . " was modified.");
     }
 
     /**

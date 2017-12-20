@@ -51,7 +51,7 @@
                             <label for="one_time" class="col-md-4 control-label">One time amount</label>
 
                             <div class="col-md-7">
-                                <input id="one_time" type="number" class="form-control" name="one_time" value="" required>
+                                <input id="one_time" type="number" class="form-control" name="one_time" value="" >
 
                                 @if ($errors->has('one_time'))
                                     <span class="help-block">
@@ -66,7 +66,7 @@
                             <label for="monthly" class="col-md-4 control-label">Monthly amount</label>
 
                             <div class="col-md-7">
-                                <input id="monthly" type="number" class="form-control" name="monthly" value="" required>
+                                <input id="monthly" type="number" class="form-control" name="monthly" value="" >
 
                                 @if ($errors->has('monthly'))
                                     <span class="help-block">
@@ -79,7 +79,7 @@
                             <label for="duration" class="col-md-4 control-label">Duration</label>
 
                             <div class="col-md-7">
-                                <input id="duration" type="number" class="form-control" name="duration" value="" required>
+                                <input id="duration" type="number" class="form-control" name="duration" value="" >
 
                                 @if ($errors->has('duration'))
                                     <span class="help-block">
@@ -92,7 +92,7 @@
                             <label for="start_date" class="col-md-4 control-label">Start date</label>
 
                             <div class="col-md-7">
-                                <input id="start_date" type="date" class="form-control" name="start_date" value="" required>
+                                <input id="start_date" type="date" class="form-control" name="start_date" value="" >
 
                                 @if ($errors->has('start_date'))
                                     <span class="help-block">
@@ -126,7 +126,7 @@
                             <label for="email_d" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-7">
-                                <input id="email_d" type="email_d" class="form-control" name="email_d" value="{{ old('email_d') }}" required>
+                                <input id="email_d" type="email_d" class="form-control" name="email_d"  value="<?php echo $user->email;?>" required>
 
                                 @if ($errors->has('email_d'))
                                     <span class="help-block">
