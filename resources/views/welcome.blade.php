@@ -71,7 +71,7 @@
 	@section('content')
     <body>
     <div class="row" style="margin-right:0px;">
-<img src="../../../fundraising/public/img/background.jpg"></img>      
+<img src="{{ asset('img/background.jpg') }}"></img>      
 	  <!-- <div class="flex-center position-ref full-height">
            @if (Route::has('login'))
                 <div class="top-right links">
