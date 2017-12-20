@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/progress', function () {
+    return view('progress');
+});
+
+Route::auth();
+Route::get('/home', 'HomeController@index');
+//Route::get('/progress', 'HomeController@progress');
+
+Route::get('/progress', 'HomeController@progress')->name('progress');
+
+Route::resource('pledge', 'PledgeController');

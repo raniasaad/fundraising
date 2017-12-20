@@ -5,13 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Fundraising</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
+		.navbar-static-top{margin-bottom: 0px!important;}
+		.navbar {margin-bottom: 0px!important;}
+		.navbar-default{margin-bottom: 0px!important;}
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -64,32 +67,30 @@
             }
         </style>
     </head>
+	@extends('layouts.app')
+	@section('content')
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+    <div class="row" style="margin-right:0px;">
+<img src="../../../fundraising/public/img/background.jpg"></img>      
+	  <!-- <div class="flex-center position-ref full-height">
+           @if (Route::has('login'))
                 <div class="top-right links">
-                    @if (Auth::check())
+                    @if (Auth::check()) 
                         <a href="{{ url('/home') }}">Home</a>
-                    @else
+                   @else 
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
-                    @endif
+                    @endif 
                 </div>
-            @endif
+             @endif 
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+            <div class="content" >
+                
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                
             </div>
-        </div>
+        </div>-->
+		</div>
     </body>
+	@endsection
 </html>
