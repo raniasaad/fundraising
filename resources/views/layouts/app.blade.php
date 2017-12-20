@@ -13,7 +13,7 @@
 		{!! Html::style('https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css') !!}
 		
     <!-- Styles -->
-    <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 </head>
 <style>
 .container a{
@@ -88,6 +88,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('public/js/app.js') }}"></script>
+    <script src="{{ asset('/js/app.js') }}"></script>
 </body>
 </html>
